@@ -31,12 +31,12 @@ public class Translation extends Module {
         .defaultValue(false)
         .build());
     public final Setting<String> sSetDumpPath = sgGeneral.add(new StringSetting.Builder()
-        .name("DumpPath")
+        .name("存储位置")
         .defaultValue("D:\\hack\\Misc\\meteor-translation-addon\\test\\en_us.json")
         .visible(() -> false)
         .build());
     public final Setting<Boolean> bSetDumpFile = sgGeneral.add(new BoolSetting.Builder()
-        .name("dump en_usJson")
+        .name("保存语言文件")
         .defaultValue(false)
         .visible(() -> false)
         .build());
@@ -106,7 +106,7 @@ public class Translation extends Module {
 
 
     public void tran() {
-        for (Module module : Modules.get().getAll()) {
+        for (Module module : Modules.get().getList()) {
             String addonName = TransUtil.getAddonName(module);
             if (!translationModules.get().contains(addonName)) continue;
             //插件过滤

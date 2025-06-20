@@ -17,6 +17,9 @@ repositories {
         name = "Meteor Dev Snapshots"
         url = "https://maven.meteordev.org/snapshots"
     }
+    //临时使用流星CI构建
+//    flatDir { dirs 'D://hack/SeijaLib' }
+//    maven { url 'file:///D://hack/SeijaLib' }
 }
 
 dependencies {
@@ -26,7 +29,10 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     // Meteor
-    modImplementation "meteordevelopment:meteor-client:${project.minecraft_version}-SNAPSHOT"
+    //临时使用流星CI构建
+    modImplementation files('D:\\hack\\SeijaLib\\meteor-client-1.21.6-local.jar')
+
+    //modImplementation "meteordevelopment:meteor-client:${project.minecraft_version}-SNAPSHOT"
 }
 
 tasks {

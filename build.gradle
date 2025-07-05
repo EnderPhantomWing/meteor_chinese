@@ -30,9 +30,9 @@ dependencies {
 
     // Meteor
     //临时使用流星CI构建
-    modImplementation files('D:\\hack\\SeijaLib\\meteor-client-1.21.6-local.jar')
+//    modImplementation files('D:\\hack\\SeijaLib\\meteor-client-1.21.6-local.jar')
 
-    //modImplementation "meteordevelopment:meteor-client:${project.minecraft_version}-SNAPSHOT"
+    modImplementation "meteordevelopment:meteor-client:${project.minecraft_version}-SNAPSHOT"
 }
 
 tasks {

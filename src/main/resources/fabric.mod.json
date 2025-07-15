@@ -6,7 +6,8 @@
   "description": "为 meteor客户端 提供中文支持",
   "authors": [
     "Nippaku Zanmu",
-    "xingke"
+    "xingke",
+    "EnderPhantomWing"
   ],
   "contact": {
     "repo": "https://github.com/xingke0/meteor_chinese"
